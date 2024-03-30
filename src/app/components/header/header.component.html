@@ -18,7 +18,12 @@
         <li class="nav-item" routerLinkActive="active bg-success">
           <a class="nav-link active" aria-current="page" routerLink="/ContactUs">Contact Us</a>
         </li>
-
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link active" aria-current="page" routerLink="/Login">
+            <span *ngIf="!isUserLoggedIn">Login</span>
+            <span *ngIf="isUserLoggedIn">Logout</span>
+          </a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Link</a>
         </li>

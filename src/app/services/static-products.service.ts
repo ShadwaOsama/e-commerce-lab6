@@ -32,4 +32,7 @@ export class StaticProductsService {
     return this.products.filter((prd)=>prd.catId==catId)
    }
   }
+  mapProductsToIds():number[]{
+    return this.products.map((prd)=>prd.id)
+  }
 }

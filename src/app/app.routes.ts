@@ -7,9 +7,11 @@ import { ProductsComponent } from './components/products/products.component';
 import { VisionComponent } from './components/vision/vision.component';
 import { ValuesComponent } from './components/values/values.component';
 import { DetailsComponent } from './components/details/details.component';
+import { LoginComponent } from './components/login/login.component';
 export const routes: Routes = [
   {path:'',pathMatch:'full',redirectTo:'Home'},
   {path:'Home',component:HomeComponent},
+  {path:'Login',component:LoginComponent},
   {path:'Details/:id',component:DetailsComponent},
 
   {path:'AboutUs',component:AboutUsComponent,children:[
