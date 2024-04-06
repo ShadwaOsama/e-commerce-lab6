@@ -14,6 +14,9 @@
         <!-- <button class="btn btn-primary" (click)="buyProduct(prd)">Buy</button> -->
         <!-- <button class="btn btn-primary" [routerLink]="['/Details',prd.id]">Details</button> -->
         <button class="btn btn-primary" (click)="navigateToDetails(prd.id)">Details</button>
+        <button class="btn btn-danger" (click)="deleteProduct(prd.id)">Delete</button>
+        <button class="btn btn-primary" (click)="navigateToUpdate(prd.id)">Update</button>
+
 
       </div>
     </div>
